@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "exclude": [
+    "node_modules"
+  ],
+  "extends": "@ecomverzo/tsconfig/base.json",
+  "include": [
+    "**/*.ts",
+    "eslint.config.mjs"
+  ],
+  "compilerOptions": {
+    "lib": [
+      "ES2022"
+    ]
+  }
+}

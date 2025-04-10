@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "@ecomverzo/domain",
+  "version": "0.0.0",
+  "description": "core domain",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "types": "./src/index.ts",
+    "default": "./src/index.ts"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo dist",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "type-check": "tsc --noEmit --pretty"
+  },
+  "dependencies": {
+    "@ecomverzo/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@ecomverzo/eslint-config": "workspace:*",
+    "@ecomverzo/tsconfig": "workspace:*"
+  },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"
+  }
+}

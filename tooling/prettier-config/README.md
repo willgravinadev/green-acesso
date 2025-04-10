@@ -1,0 +1,1 @@
+# @ecomverzo/prettier-config

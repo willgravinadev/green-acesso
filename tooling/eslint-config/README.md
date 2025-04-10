@@ -1,0 +1,1 @@
+# @ecomverzo/eslint-config

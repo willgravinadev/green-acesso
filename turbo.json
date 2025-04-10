@@ -1,0 +1,85 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [".env.*local"],
+  "globalEnv": [
+    "NODE_ENV",
+    "CI",
+    "ANALYZE",
+    "PORT",
+    "NEXT_RUNTIME",
+    "JWT_SECRET",
+    "JWT_ISSUER",
+    "JWT_ALGORITHM",
+    "JWT_EXPIRES_IN_DAYS",
+    "NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID",
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", ".content-collections/**"]
+    },
+    "build:apps": {
+      "dependsOn": ["^build:apps"],
+      "outputs": [".next/**", "!.next/cache/**", ".content-collections/**"]
+    },
+    "build:mdx": {
+      "outputs": [".content-collections/**"]
+    },
+    "build:packages": {
+      "dependsOn": ["^build:packages"],
+      "outputs": ["dist/**"]
+    },
+    "clean": {
+      "cache": false
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:migrate:dev": {
+      "cache": false
+    },
+    "db:migrate:prod": {
+      "cache": false
+    },
+    "db:push": {
+      "cache": false
+    },
+    "db:seed": {
+      "cache": false
+    },
+    "db:studio": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev:docs": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev:packages": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev:web": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {},
+    "lint:fix": {},
+    "test:e2e": {
+      "outputs": ["playwright-report/**", "test-results/**"]
+    },
+    "test:e2e:inspector": {
+      "outputs": ["playwright-report/**", "test-results/**"]
+    },
+    "test:e2e:ui": {
+      "outputs": ["playwright-report/**", "test-results/**"]
+    },
+    "type-check": {}
+  },
+  "ui": "tui"
+}

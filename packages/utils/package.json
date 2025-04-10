@@ -1,0 +1,31 @@
+{
+  "name": "@ecomverzo/utils",
+  "version": "0.0.21",
+  "description": "The utility functions for projects",
+  "license": "MIT",
+  "author": "W I L L <will@gravina.dev> (https://github.com/willgravinadev/)",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo dist",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "type-check": "tsc --noEmit"
+  },
+  "types": "src/index.ts",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.1.0"
+  },
+  "devDependencies": {
+    "@ecomverzo/eslint-config": "workspace:*",
+    "@ecomverzo/tsconfig": "workspace:*",
+    "@types/node": "^22.14.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"
+  }
+}
