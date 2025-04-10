@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@ecomverzo/i18n",
+  "name": "@greenacesso/i18n",
   "version": "0.0.0",
   "description": "The internationalization package",
   "license": "MIT",
@@ -27,8 +27,8 @@
     "next": "^15"
   },
   "devDependencies": {
-    "@ecomverzo/eslint-config": "workspace:*",
-    "@ecomverzo/tsconfig": "workspace:*",
+    "@greenacesso/eslint-config": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*",
     "@types/react": "19.1.0",
     "next": "^15.2.4"
   },

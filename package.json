@@ -1,10 +1,10 @@
 {
   "private": true,
-  "name": "ecomverzo",
+  "name": "greenacesso",
   "author": "W I L L <will@gravina.dev> (https://github.com/willgravinadev/)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inverzo/ecomverzo.git"
+    "url": "git+https://github.com/willgravinadev/green-acesso.git"
   },
   "type": "module",
   "scripts": {
@@ -26,9 +26,9 @@
     "db:studio": "turbo db:studio",
     "dev": "turbo dev --concurrency 20",
     "dev:apps": "turbo dev --filter=./apps/*",
-    "dev:core-api": "turbo dev --filter=@ecomverzo/core-api",
+    "dev:core-api": "turbo dev --filter=@greenacesso/core-api",
     "dev:packages": "turbo dev --filter=./packages/*",
-    "dev:www": "turbo dev --filter=@ecomverzo/www",
+    "dev:www": "turbo dev --filter=@greenacesso/www",
     "format:check": "prettier --cache --check --ignore-path .gitignore --ignore-path .prettierignore .",
     "format:write": "prettier --cache --write --list-different --ignore-path .gitignore --ignore-path .prettierignore .",
     "preinstall": "npx --yes only-allow pnpm",
@@ -65,10 +65,10 @@
     "@cspell/dict-npm": "^5.1.33",
     "@cspell/dict-software-terms": "^5.0.3",
     "@cspell/dict-typescript": "^3.2.1",
-    "@ecomverzo/eslint-config": "workspace:*",
-    "@ecomverzo/prettier-config": "workspace:*",
-    "@ecomverzo/prettier-plugin-package-json": "workspace:*",
-    "@ecomverzo/tsconfig": "workspace:*",
+    "@greenacesso/eslint-config": "workspace:*",
+    "@greenacesso/prettier-config": "workspace:*",
+    "@greenacesso/prettier-plugin-package-json": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*",
     "@playwright/test": "^1.51.1",
     "@turbo/gen": "^2.4.4",
     "@types/node": "^22.14.0",

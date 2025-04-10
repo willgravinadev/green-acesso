@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@ecomverzo/domain",
+  "name": "@greenacesso/domain",
   "version": "0.0.0",
   "description": "core domain",
   "license": "MIT",
@@ -16,11 +16,11 @@
     "type-check": "tsc --noEmit --pretty"
   },
   "dependencies": {
-    "@ecomverzo/utils": "workspace:*"
+    "@greenacesso/utils": "workspace:*"
   },
   "devDependencies": {
-    "@ecomverzo/eslint-config": "workspace:*",
-    "@ecomverzo/tsconfig": "workspace:*"
+    "@greenacesso/eslint-config": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*"
   },
   "lint-staged": {
     "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"

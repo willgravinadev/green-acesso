@@ -6,7 +6,7 @@ import { eslintPlugin, unusedImportsPlugin } from '@/plugins'
 
 export const javascript: Linter.Config[] = [
   {
-    name: 'ecomverzo:javascript',
+    name: 'greenacesso:javascript',
     languageOptions: {
       ecmaVersion: 2022,
       globals: {

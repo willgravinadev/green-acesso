@@ -5,7 +5,7 @@ import { testingLibraryPlugin } from '@/plugins'
 
 export const testingLibrary: Linter.Config[] = [
   {
-    name: 'ecomverzo:testing-library',
+    name: 'greenacesso:testing-library',
     plugins: {
       'testing-library': testingLibraryPlugin
     },

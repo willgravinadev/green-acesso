@@ -23,7 +23,7 @@
 - [ ] `pnpm check` runs successfully
 - [ ] Code meets the project's coding standards and passes linting checks
 - [ ] Unit tests added or updated, and all tests pass
-- [ ] Reviewed [Contributor Guidelines](https://github.com/inverzo/ecomverzo/blob/master/CONTRIBUTING.md)
+- [ ] Reviewed [Contributor Guidelines](https://github.com/willgravinadev/green-acesso/blob/master/CONTRIBUTING.md)
 
 ## 🖼️ Screenshots
 

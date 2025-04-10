@@ -1,6 +1,6 @@
-import ecomverzo from '@ecomverzo/eslint-config'
+import greenacesso from '@greenacesso/eslint-config'
 
-export default ecomverzo({
+export default greenacesso({
   project: './tsconfig.json',
   tsconfigRootDir: import.meta.dirname,
   turbo: true,

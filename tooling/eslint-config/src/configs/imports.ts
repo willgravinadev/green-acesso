@@ -4,7 +4,7 @@ import { importPlugin } from '@/plugins'
 
 export const imports: Linter.Config[] = [
   {
-    name: 'ecomverzo:imports',
+    name: 'greenacesso:imports',
     plugins: {
       import: importPlugin as unknown as Record<string, unknown>
     },

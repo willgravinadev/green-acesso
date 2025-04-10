@@ -1,6 +1,6 @@
 import type { ProviderError } from '../../errors/_shared/provider.error'
 import type { Password } from '../../value-objects/password.value-object'
-import type { Either } from '@ecomverzo/utils'
+import type { Either } from '@greenacesso/utils'
 
 export namespace CompareEncryptedPasswordCryptoProviderDTO {
   export type Parameters = Readonly<{

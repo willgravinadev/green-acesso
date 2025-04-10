@@ -9,6 +9,6 @@
     "strict": true
   },
   "exclude": ["node_modules"],
-  "extends": "@ecomverzo/tsconfig/base.json",
+  "extends": "@greenacesso/tsconfig/base.json",
   "include": ["**/*.ts"]
 }

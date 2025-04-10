@@ -7,7 +7,7 @@ import {
   type SendLogInfoLoggerProviderDTO,
   type SendLogTimeControllerLoggerProviderDTO,
   type SendLogTimeUseCaseLoggerProviderDTO
-} from '@ecomverzo/domain'
+} from '@greenacesso/domain'
 import pino, { type Logger } from 'pino'
 
 export class PinoLoggerProvider

@@ -2,19 +2,19 @@
   {{#unless shouldPublish}}
   "private": true,
   {{/unless}}
-  "name": "@ecomverzo/{{ name }}",
+  "name": "@greenacesso/{{ name }}",
   "version": "{{ version }}",
   "description": "{{{ description }}}",
   "license": "MIT",
   {{#if shouldPublish}}
   "author": "W I L L <will@gravina.dev> (https://github.com/willgravinadev/)",
-  "homepage": "https://github.com/inverzo/ecomverzo#readme",
+  "homepage": "https://github.com/willgravinadev/green-acesso#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inverzo/ecomverzo.git"
+    "url": "git+https://github.com/willgravinadev/green-acesso.git"
   },
   "bugs": {
-    "url": "https://github.com/inverzo/ecomverzo/issues"
+    "url": "https://github.com/willgravinadev/green-acesso/issues"
   },
   "files": [
     "dist"
@@ -44,8 +44,8 @@
     {{/if}}
   },
   "devDependencies": {
-    "@ecomverzo/eslint-config": "workspace:*",
-    "@ecomverzo/tsconfig": "workspace:*"
+    "@greenacesso/eslint-config": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*"
   },
   "lint-staged": {
     "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"

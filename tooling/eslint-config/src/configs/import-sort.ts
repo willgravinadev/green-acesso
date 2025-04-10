@@ -4,7 +4,7 @@ import { simpleImportSortPlugin } from '@/plugins'
 
 export const importSort: Linter.Config[] = [
   {
-    name: 'ecomverzo:import-sort',
+    name: 'greenacesso:import-sort',
     plugins: {
       'simple-import-sort': simpleImportSortPlugin
     },

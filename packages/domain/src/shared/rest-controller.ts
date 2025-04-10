@@ -1,6 +1,6 @@
 import type { ISendLogErrorLoggerProvider } from '../contracts-providers/logger/send-log-error.logger-provider'
 import type { ISendLogTimeControllerLoggerProvider } from '../contracts-providers/logger/send-log-time-controller.logger-provider'
-import type { Either } from '@ecomverzo/utils'
+import type { Either } from '@greenacesso/utils'
 
 import { performance } from 'node:perf_hooks'
 

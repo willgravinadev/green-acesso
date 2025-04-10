@@ -3,7 +3,7 @@ import type { InvalidEmailError } from '@/errors/value-objects/email/invalid-ema
 import type { InvalidIDError } from '@/errors/value-objects/id/invalid-id.error'
 import type { User } from '@/models/user.model'
 import type { Email } from '@/value-objects/email.value-object'
-import type { Either } from '@ecomverzo/utils'
+import type { Either } from '@greenacesso/utils'
 
 export namespace ValidateEmailUsersRepositoryDTO {
   export type Parameters = Readonly<{ email: Email }>

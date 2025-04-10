@@ -1,6 +1,6 @@
 import type { RepositoryError } from '@/errors/_shared/repository.error'
 import type { User } from '@/models/user.model'
-import type { Either } from '@ecomverzo/utils'
+import type { Either } from '@greenacesso/utils'
 
 export namespace CreateUsersRepositoryDTO {
   export type Parameters = Readonly<{

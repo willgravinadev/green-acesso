@@ -1,4 +1,4 @@
-import type { Options as PackageJSONOptions } from '@ecomverzo/prettier-plugin-package-json'
+import type { Options as PackageJSONOptions } from '@greenacesso/prettier-plugin-package-json'
 import type { Config } from 'prettier'
 import type { PluginOptions } from 'prettier-plugin-tailwindcss'
 
@@ -9,7 +9,7 @@ type SortJsonOptions = {
 
 export type Options = Config & SortJsonOptions & PluginOptions & PackageJSONOptions
 
-const ecomverzo = (options: Options = {}): Options => {
+const greenacesso = (options: Options = {}): Options => {
   const { plugins = [], ...rest } = options
 
   return {
@@ -23,7 +23,7 @@ const ecomverzo = (options: Options = {}): Options => {
     plugins: [
       'prettier-plugin-prisma',
       'prettier-plugin-sort-json',
-      '@ecomverzo/prettier-plugin-package-json',
+      '@greenacesso/prettier-plugin-package-json',
       ...plugins,
 
       'prettier-plugin-tailwindcss' // must be loaded last
@@ -40,4 +40,4 @@ const ecomverzo = (options: Options = {}): Options => {
   }
 }
 
-export default ecomverzo
+export default greenacesso

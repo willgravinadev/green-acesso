@@ -3,7 +3,7 @@ import type { ISendLogTimeUseCaseLoggerProvider } from '@/contracts-providers/lo
 
 import { performance } from 'node:perf_hooks'
 
-import { type Either } from '@ecomverzo/utils'
+import { type Either } from '@greenacesso/utils'
 
 export abstract class UseCase<Parameters, ResultFailure, ResultSuccess> {
   constructor(

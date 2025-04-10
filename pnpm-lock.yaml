@@ -47,16 +47,16 @@ importers:
       '@cspell/dict-typescript':
         specifier: ^3.2.1
         version: 3.2.1
-      '@ecomverzo/eslint-config':
+      '@greenacesso/eslint-config':
         specifier: workspace:*
         version: link:tooling/eslint-config
-      '@ecomverzo/prettier-config':
+      '@greenacesso/prettier-config':
         specifier: workspace:*
         version: link:tooling/prettier-config
-      '@ecomverzo/prettier-plugin-package-json':
+      '@greenacesso/prettier-plugin-package-json':
         specifier: workspace:*
         version: link:tooling/prettier-plugin-package-json
-      '@ecomverzo/tsconfig':
+      '@greenacesso/tsconfig':
         specifier: workspace:*
         version: link:tooling/tsconfig
       '@playwright/test':
@@ -140,14 +140,14 @@ importers:
 
   packages/domain:
     dependencies:
-      '@ecomverzo/utils':
+      '@greenacesso/utils':
         specifier: workspace:*
         version: link:../utils
     devDependencies:
-      '@ecomverzo/eslint-config':
+      '@greenacesso/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@ecomverzo/tsconfig':
+      '@greenacesso/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
 
@@ -160,10 +160,10 @@ importers:
         specifier: ^3.24.2
         version: 3.24.2
     devDependencies:
-      '@ecomverzo/eslint-config':
+      '@greenacesso/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@ecomverzo/tsconfig':
+      '@greenacesso/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
 
@@ -173,10 +173,10 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2(next@15.2.4(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@5.8.2)
     devDependencies:
-      '@ecomverzo/eslint-config':
+      '@greenacesso/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@ecomverzo/tsconfig':
+      '@greenacesso/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/react':
@@ -188,13 +188,13 @@ importers:
 
   packages/logger:
     dependencies:
-      '@ecomverzo/domain':
+      '@greenacesso/domain':
         specifier: workspace:*
         version: link:../domain
-      '@ecomverzo/env':
+      '@greenacesso/env':
         specifier: workspace:*
         version: link:../env
-      '@ecomverzo/utils':
+      '@greenacesso/utils':
         specifier: workspace:*
         version: link:../utils
       pino:
@@ -204,10 +204,10 @@ importers:
         specifier: ^13.0.0
         version: 13.0.0
     devDependencies:
-      '@ecomverzo/eslint-config':
+      '@greenacesso/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@ecomverzo/tsconfig':
+      '@greenacesso/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
 
@@ -220,10 +220,10 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
     devDependencies:
-      '@ecomverzo/eslint-config':
+      '@greenacesso/eslint-config':
         specifier: workspace:*
         version: link:../../tooling/eslint-config
-      '@ecomverzo/tsconfig':
+      '@greenacesso/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/node':
@@ -305,19 +305,19 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(prettier@3.5.3)
     devDependencies:
-      '@ecomverzo/tsconfig':
-        specifier: workspace:*
-        version: link:../tsconfig
       '@eslint/config-inspector':
         specifier: ^1.0.2
         version: 1.0.2(eslint@9.23.0(jiti@2.4.2))
+      '@greenacesso/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
       eslint:
         specifier: 9.23.0
         version: 9.23.0(jiti@2.4.2)
 
   tooling/prettier-config:
     dependencies:
-      '@ecomverzo/prettier-plugin-package-json':
+      '@greenacesso/prettier-plugin-package-json':
         specifier: workspace:*
         version: link:../prettier-plugin-package-json
       prettier:
@@ -333,7 +333,7 @@ importers:
         specifier: ^0.6.11
         version: 0.6.11(prettier@3.3.3)
     devDependencies:
-      '@ecomverzo/eslint-config':
+      '@greenacesso/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
 
@@ -346,10 +346,10 @@ importers:
         specifier: ^2.8.0
         version: 2.8.0
     devDependencies:
-      '@ecomverzo/eslint-config':
+      '@greenacesso/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@ecomverzo/tsconfig':
+      '@greenacesso/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
 

@@ -1,1 +1,1 @@
-# @ecomverzo/eslint-config
+# @greenacesso/eslint-config

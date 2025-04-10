@@ -1,6 +1,6 @@
 import type { ProviderError } from '@/errors/_shared/provider.error'
 import type { ID } from '@/value-objects/id.value-object'
-import type { Either } from '@ecomverzo/utils'
+import type { Either } from '@greenacesso/utils'
 
 export namespace GenerateJWTTokenProviderDTO {
   export type Parameters = Readonly<{ userID: ID }>

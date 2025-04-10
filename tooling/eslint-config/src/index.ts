@@ -36,7 +36,7 @@ export type Configs = Linter.Config[]
 
 const hasTypeScript = isPackageExists('typescript')
 
-const ecomverzo = async (options: Options = {}, ...userConfigs: Configs): Promise<Configs> => {
+const greenacesso = async (options: Options = {}, ...userConfigs: Configs): Promise<Configs> => {
   const {
     typescript: enableTypeScript = hasTypeScript,
     react: enableReact = false,
@@ -97,4 +97,4 @@ const ecomverzo = async (options: Options = {}, ...userConfigs: Configs): Promis
 
 export * from './globs'
 
-export default ecomverzo
+export default greenacesso

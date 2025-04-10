@@ -3,7 +3,7 @@ import type {
   ISendLogInfoLoggerProvider,
   ISendLogTimeControllerLoggerProvider,
   ISendLogTimeUseCaseLoggerProvider
-} from '@ecomverzo/domain'
+} from '@greenacesso/domain'
 
 import { PinoLoggerProvider } from './infra/pino.logger-provider'
 

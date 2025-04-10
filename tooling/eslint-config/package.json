@@ -1,5 +1,5 @@
 {
-  "name": "@ecomverzo/eslint-config",
+  "name": "@greenacesso/eslint-config",
   "version": "0.1.35",
   "description": "The eslint config",
   "license": "MIT",
@@ -39,14 +39,14 @@
     "eslint-plugin-turbo": "^2.4.4",
     "eslint-plugin-unicorn": "^58.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "prettier-plugin-prisma": "^5.0.0",
-    "prettier-plugin-sort-json": "^4.1.1",
     "globals": "^16.0.0",
-    "local-pkg": "^1.1.1"
+    "local-pkg": "^1.1.1",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prettier-plugin-sort-json": "^4.1.1"
   },
   "devDependencies": {
     "@eslint/config-inspector": "^1.0.2",
-    "@ecomverzo/tsconfig": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*",
     "eslint": "9.23.0"
   },
   "publishConfig": {

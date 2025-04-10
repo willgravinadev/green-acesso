@@ -4,7 +4,7 @@ import { unicornPlugin } from '@/plugins'
 
 export const unicorn: Linter.Config[] = [
   {
-    name: 'ecomverzo:unicorn',
+    name: 'greenacesso:unicorn',
     plugins: {
       unicorn: unicornPlugin
     },

@@ -1,1 +1,1 @@
-# @ecomverzo/prettier-config
+# @greenacesso/prettier-config

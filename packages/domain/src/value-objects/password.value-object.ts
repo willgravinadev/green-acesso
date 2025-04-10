@@ -1,4 +1,4 @@
-import { type Either, failure, success } from '@ecomverzo/utils'
+import { type Either, failure, success } from '@greenacesso/utils'
 
 import { InvalidPasswordFormatError } from '../errors/value-objects/password/invalid-password-format.error'
 import { InvalidPasswordLengthError } from '../errors/value-objects/password/invalid-password-length.error'

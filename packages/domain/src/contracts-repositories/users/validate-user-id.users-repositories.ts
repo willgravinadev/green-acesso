@@ -2,7 +2,7 @@ import type { RepositoryError } from '@/errors/_shared/repository.error'
 import type { InvalidIDError } from '@/errors/value-objects/id/invalid-id.error'
 import type { User } from '@/models/user.model'
 import type { ID } from '@/value-objects/id.value-object'
-import type { Either } from '@ecomverzo/utils'
+import type { Either } from '@greenacesso/utils'
 
 export namespace ValidateUserIDUsersRepositoryDTO {
   export type Parameters = Readonly<{ userID: ID }>

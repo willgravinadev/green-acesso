@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@ecomverzo/env",
+  "name": "@greenacesso/env",
   "version": "0.0.0",
   "description": "The validated environment variables",
   "license": "MIT",
@@ -17,8 +17,8 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@ecomverzo/eslint-config": "workspace:*",
-    "@ecomverzo/tsconfig": "workspace:*"
+    "@greenacesso/eslint-config": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*"
   },
   "lint-staged": {
     "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"

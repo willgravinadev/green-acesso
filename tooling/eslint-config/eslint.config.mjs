@@ -1,6 +1,6 @@
-import ecomverzo from './dist/index.js'
+import greenacesso from './dist/index.js'
 
-export default ecomverzo(
+export default greenacesso(
   {
     project: './tsconfig.json',
     tsconfigRootDir: import.meta.dirname,

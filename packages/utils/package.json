@@ -1,5 +1,5 @@
 {
-  "name": "@ecomverzo/utils",
+  "name": "@greenacesso/utils",
   "version": "0.0.21",
   "description": "The utility functions for projects",
   "license": "MIT",
@@ -18,8 +18,8 @@
     "tailwind-merge": "^3.1.0"
   },
   "devDependencies": {
-    "@ecomverzo/eslint-config": "workspace:*",
-    "@ecomverzo/tsconfig": "workspace:*",
+    "@greenacesso/eslint-config": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*",
     "@types/node": "^22.14.0"
   },
   "publishConfig": {

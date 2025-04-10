@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@ecomverzo/logger",
+  "name": "@greenacesso/logger",
   "version": "0.0.0",
   "description": "logger provider",
   "license": "MIT",
@@ -20,15 +20,15 @@
   },
   "types": "./dist/index.d.ts",
   "dependencies": {
-    "@ecomverzo/domain": "workspace:*",
-    "@ecomverzo/env": "workspace:*",
-    "@ecomverzo/utils": "workspace:*",
+    "@greenacesso/domain": "workspace:*",
+    "@greenacesso/env": "workspace:*",
+    "@greenacesso/utils": "workspace:*",
     "pino": "^9.6.0",
     "pino-pretty": "^13.0.0"
   },
   "devDependencies": {
-    "@ecomverzo/eslint-config": "workspace:*",
-    "@ecomverzo/tsconfig": "workspace:*"
+    "@greenacesso/eslint-config": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*"
   },
   "lint-staged": {
     "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"

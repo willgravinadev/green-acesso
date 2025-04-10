@@ -1,7 +1,7 @@
 import type { ProviderError } from '@/errors/_shared/provider.error'
 import type { InvalidIDError } from '@/errors/value-objects/id/invalid-id.error'
 import type { ID } from '@/value-objects/id.value-object'
-import type { Either } from '@ecomverzo/utils'
+import type { Either } from '@greenacesso/utils'
 
 export namespace VerifyJWTTokenProviderDTO {
   export type Parameters = Readonly<{ jwtToken: string }>

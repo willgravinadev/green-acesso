@@ -1,15 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
-  "extends": "@ecomverzo/tsconfig/base.json",
-  "include": [
-    "**/*.ts"
-  ],
   "compilerOptions": {
-    "lib": [ "ES2022"
-    ]
-  }
+    "lib": ["ES2022"]
+  },
+  "exclude": ["node_modules", "dist"],
+  "extends": "@greenacesso/tsconfig/base.json",
+  "include": ["**/*.ts"]
 }

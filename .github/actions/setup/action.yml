@@ -38,5 +38,5 @@ runs:
       shell: bash
       run: |
         cat << EOF > .env.local
-        DATABASE_URL=postgres://postgres:postgres@localhost:5432/ecomverzo
+        DATABASE_URL=postgres://postgres:postgres@localhost:5432/greenacesso
         EOF

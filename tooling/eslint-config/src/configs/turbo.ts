@@ -4,7 +4,7 @@ import { turboPlugin } from '@/plugins'
 
 export const turbo: Linter.Config[] = [
   {
-    name: 'ecomverzo:turbo',
+    name: 'greenacesso:turbo',
     plugins: {
       turbo: turboPlugin
     },

@@ -4,7 +4,7 @@ import { sonarjsPlugin } from '@/plugins'
 
 export const sonarjs: Linter.Config[] = [
   {
-    name: 'ecomverzo:sonarjs',
+    name: 'greenacesso:sonarjs',
     plugins: {
       sonarjs: sonarjsPlugin as unknown as Record<string, unknown>
     },

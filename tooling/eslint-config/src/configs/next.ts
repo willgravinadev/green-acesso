@@ -4,7 +4,7 @@ import { nextPlugin } from '@/plugins'
 
 export const next: Linter.Config[] = [
   {
-    name: 'ecomverzo:next',
+    name: 'greenacesso:next',
     plugins: {
       '@next/next': nextPlugin
     },

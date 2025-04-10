@@ -1,6 +1,6 @@
-import ecomverzo from '@ecomverzo/prettier-config'
+import greenacesso from '@greenacesso/prettier-config'
 
-export default ecomverzo({
+export default greenacesso({
   printWidth: 100,
   tabWidth: 2,
   useTabs: false,
@@ -12,5 +12,5 @@ export default ecomverzo({
   semi: false,
   bracketSpacing: true,
   bracketSameLine: false,
-  plugins: ['@ecomverzo/prettier-plugin-package-json']
+  plugins: ['@greenacesso/prettier-plugin-package-json']
 })

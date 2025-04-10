@@ -1,1 +1,1 @@
-# @ecomverzo/tsconfig
+# @greenacesso/tsconfig

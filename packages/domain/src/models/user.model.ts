@@ -3,7 +3,7 @@ import type { GenerateIDError } from '../errors/value-objects/id/generate-id.err
 import type { Email } from '../value-objects/email.value-object'
 import type { Password } from '../value-objects/password.value-object'
 
-import { type Either, failure, success } from '@ecomverzo/utils'
+import { type Either, failure, success } from '@greenacesso/utils'
 
 import { DateTime } from '../value-objects/date-time.value-object'
 import { ID } from '../value-objects/id.value-object'

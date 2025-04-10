@@ -9,7 +9,7 @@ export const react = (options?: Options): Linter.Config[] => {
 
   return [
     {
-      name: 'ecomverzo:react',
+      name: 'greenacesso:react',
       plugins: {
         ...(reactPluginAll.plugins as unknown as Record<string, ESLint.Plugin>),
         'react-hooks': reactHooksPlugin,

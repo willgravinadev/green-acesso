@@ -1,5 +1,5 @@
 {
-  "name": "@ecomverzo/prettier-config",
+  "name": "@greenacesso/prettier-config",
   "version": "0.0.15",
   "description": "The prettier config for projects",
   "license": "MIT",
@@ -20,14 +20,14 @@
   },
   "types": "./dist/index.d.ts",
   "dependencies": {
-    "@ecomverzo/prettier-plugin-package-json": "workspace:*",
+    "@greenacesso/prettier-plugin-package-json": "workspace:*",
+    "prettier": "3.3.3",
     "prettier-plugin-prisma": "^5.0.0",
     "prettier-plugin-sort-json": "^4.1.1",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "prettier": "3.3.3"
+    "prettier-plugin-tailwindcss": "^0.6.11"
   },
   "devDependencies": {
-    "@ecomverzo/eslint-config": "workspace:*"
+    "@greenacesso/eslint-config": "workspace:*"
   },
   "publishConfig": {
     "access": "public"

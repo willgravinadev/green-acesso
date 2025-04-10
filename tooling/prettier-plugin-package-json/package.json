@@ -1,5 +1,5 @@
 {
-  "name": "@ecomverzo/prettier-plugin-package-json",
+  "name": "@greenacesso/prettier-plugin-package-json",
   "version": "0.0.4",
   "description": "A prettier plugin using prettier-package-json",
   "license": "MIT",
@@ -26,8 +26,8 @@
     "prettier": "3.x"
   },
   "devDependencies": {
-    "@ecomverzo/eslint-config": "workspace:*",
-    "@ecomverzo/tsconfig": "workspace:*"
+    "@greenacesso/eslint-config": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*"
   },
   "publishConfig": {
     "access": "public"

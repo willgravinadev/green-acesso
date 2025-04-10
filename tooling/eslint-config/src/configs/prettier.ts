@@ -4,7 +4,7 @@ import { prettierConfig, prettierPlugin } from '@/plugins'
 
 export const prettier: Linter.Config[] = [
   {
-    name: 'ecomverzo:prettier',
+    name: 'greenacesso:prettier',
     plugins: {
       prettier: prettierPlugin
     },

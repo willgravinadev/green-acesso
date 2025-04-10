@@ -3,7 +3,7 @@ import type { ValueObjectName } from '../value-objects/_value-object-name'
 
 import { randomUUID } from 'node:crypto'
 
-import { type Either, failure, success } from '@ecomverzo/utils'
+import { type Either, failure, success } from '@greenacesso/utils'
 
 import { GenerateIDError } from '../errors/value-objects/id/generate-id.error'
 import { InvalidIDError } from '../errors/value-objects/id/invalid-id.error'

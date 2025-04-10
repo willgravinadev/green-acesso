@@ -1,4 +1,4 @@
-import { type Either, failure, success } from '@ecomverzo/utils'
+import { type Either, failure, success } from '@greenacesso/utils'
 
 import {
   InvalidAbbreviatedMonthDateTimeError,
