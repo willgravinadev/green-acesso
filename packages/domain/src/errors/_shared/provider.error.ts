@@ -4,30 +4,12 @@ type ParametersConstructorDTO = {
   error: Error | unknown
   provider: {
     name: ProvidersNames
-    method: CryptoProviderMethods | TokenProviderMethods | NotificationProviderMethods
+    method: string
     externalName?: string
   }
 }
 
-export enum ProvidersNames {
-  CRYPTO = 'crypto',
-  TOKEN = 'token',
-  NOTIFICATION = 'notification'
-}
-
-export enum TokenProviderMethods {
-  GENERATE_JWT = 'generate jwt',
-  VERIFY_JWT = 'verify jwt'
-}
-
-export enum NotificationProviderMethods {
-  SEND_EMAIL = 'send email'
-}
-
-export enum CryptoProviderMethods {
-  ENCRYPT_PASSWORD = 'encrypt password',
-  COMPARE_ENCRYPTED_PASSWORD = 'compare encrypted password'
-}
+export enum ProvidersNames {}
 
 export class ProviderError {
   readonly status: StatusError

@@ -1,3 +1,1 @@
-export enum ModelName {
-  USER = 'user'
-}
+export enum ModelName {}

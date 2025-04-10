@@ -4,7 +4,7 @@ type ParametersConstructorDTO = {
   error: Error | unknown
   repository: {
     name: RepositoryNames
-    method: UsersRepositoryMethods
+    method: string
     externalName?: RepositoryExternalName
   }
 }
@@ -13,15 +13,7 @@ export enum RepositoryExternalName {
   PRISMA = 'prisma'
 }
 
-export enum RepositoryNames {
-  USERS = 'users'
-}
-
-export enum UsersRepositoryMethods {
-  VALIDATE_EMAIL = 'validate email',
-  CREATE = 'create',
-  VALIDATE_USER_ID = 'validate user id'
-}
+export enum RepositoryNames {}
 
 export class RepositoryError {
   readonly status: StatusError
