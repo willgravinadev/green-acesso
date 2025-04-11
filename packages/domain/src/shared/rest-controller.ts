@@ -1,9 +1,9 @@
-import type { ISendLogErrorLoggerProvider } from '../contracts-providers/logger/send-log-error.logger-provider'
-import type { ISendLogTimeControllerLoggerProvider } from '../contracts-providers/logger/send-log-time-controller.logger-provider'
-import type { Either } from '@greenacesso/utils'
-
 import { performance } from 'node:perf_hooks'
 
+import { type Either } from '@greenacesso/utils'
+
+import { type ISendLogErrorLoggerProvider } from '../contracts-providers/logger/send-log-error.logger-provider'
+import { type ISendLogTimeControllerLoggerProvider } from '../contracts-providers/logger/send-log-time-controller.logger-provider'
 import { StatusError as HttpStatusError } from '../errors/_shared/status-error'
 
 import { HttpStatusCode } from './http-status-code.util'

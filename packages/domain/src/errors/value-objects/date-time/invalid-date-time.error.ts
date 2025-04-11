@@ -1,6 +1,5 @@
-import type { ProviderError } from '@/errors/_shared/provider.error'
-
-import { StatusError } from '@/errors/_shared/status-error'
+import { type ProviderError } from '../../_shared/provider.error'
+import { StatusError } from '../../_shared/status-error'
 
 export enum InvalidDateTimeMotive {
   DATE_REQUIRED = 'date required',

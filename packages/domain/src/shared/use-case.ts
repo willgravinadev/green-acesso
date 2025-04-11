@@ -1,9 +1,9 @@
-import type { ISendLogErrorLoggerProvider } from '@/contracts-providers/logger/send-log-error.logger-provider'
-import type { ISendLogTimeUseCaseLoggerProvider } from '@/contracts-providers/logger/send-log-time-use-case.logger-provider'
-
 import { performance } from 'node:perf_hooks'
 
 import { type Either } from '@greenacesso/utils'
+
+import { type ISendLogErrorLoggerProvider } from '../contracts-providers/logger/send-log-error.logger-provider'
+import { type ISendLogTimeUseCaseLoggerProvider } from '../contracts-providers/logger/send-log-time-use-case.logger-provider'
 
 export abstract class UseCase<Parameters, ResultFailure, ResultSuccess> {
   constructor(

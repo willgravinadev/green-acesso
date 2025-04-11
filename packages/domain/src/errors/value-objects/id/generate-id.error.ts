@@ -1,8 +1,7 @@
-import type { ProviderError } from '@/errors/_shared/provider.error'
-import type { ModelName } from '@/models/_model-name'
-
-import { StatusError } from '@/errors/_shared/status-error'
-import { ValueObjectName } from '@/value-objects/_value-object-name'
+import { type ModelName } from '../../../models/_model-name'
+import { ValueObjectName } from '../../../value-objects/_value-object-name'
+import { type ProviderError } from '../../_shared/provider.error'
+import { StatusError } from '../../_shared/status-error'
 
 type ParametersConstructorDTO = {
   modelNameOrValueObjectName: ModelName | ValueObjectName
