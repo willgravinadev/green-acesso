@@ -27,7 +27,9 @@
     "packages/i18n/src/messages/*.json",
     "packages/db/migrations/**",
     "packages/eslint-config/eslint.config.bundled_*.mjs",
-    "REST.http"
+    "REST.http",
+    "README.md",
+    "docs/**"
   ],
   "ignoreRegExpList": ["apiKey='[a-zA-Z0-9-]{32}'"],
   "import": [
@@ -47,5 +49,20 @@
   "language": "en",
   "useGitignore": true,
   "version": "0.2",
-  "words": ["greenacesso", "Português", "rharkor", "sonarjs", "willgravinadev"]
+  "words": [
+    "Acesso",
+    "bitnami",
+    "Bullmq",
+    "Dimensões",
+    "greenacesso",
+    "Importação",
+    "isready",
+    "linha",
+    "planilha",
+    "Português",
+    "rharkor",
+    "sonarjs",
+    "Timestamptz",
+    "willgravinadev"
+  ]
 }
