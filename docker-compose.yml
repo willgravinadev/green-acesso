@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  redis:
+    image: 'bitnami/redis:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    container_name: greenacesso-redis
+    ports:
+      - '6379:6379'
+
+  pg:
+    container_name: greenacesso-postgres
+    image: 'bitnami/postgresql:latest'
+    volumes:
+      - './.docker/pg_data:/bitnami/postgresql'
+    environment:
+      POSTGRESQL_PASSWORD: ${DB_PG_PASSWORD}
+      POSTGRESQL_USERNAME: ${DB_PG_USERNAME}
+      POSTGRESQL_DATABASE: ${DB_PG_DATABASE_NAME}
+      POSTGRESQL_TIMEZONE: America/SAO_PAULO
+    ports:
+      - '5432:5432'
+    restart: unless-stopped
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U ${DB_PG_USERNAME}']
+      interval: 10s
+      timeout: 5s
+      retries: 5
