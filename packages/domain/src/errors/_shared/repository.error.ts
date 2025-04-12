@@ -4,7 +4,7 @@ type ParametersConstructorDTO = {
   error: Error | unknown
   repository: {
     name: RepositoryNames
-    method: string
+    method: PaymentSlipsRepositoryMethods | CondominiumLotsRepositoryMethods
     externalName?: RepositoryExternalName
   }
 }
@@ -13,7 +13,20 @@ export enum RepositoryExternalName {
   PRISMA = 'prisma'
 }
 
-export enum RepositoryNames {}
+export enum RepositoryNames {
+  PAYMENT_SLIPS = 'payment slips',
+  CONDOMINIUM_LOTS = 'condominium lots'
+}
+
+export enum PaymentSlipsRepositoryMethods {
+  CREATE = 'create',
+  LIST_ALL = 'list all',
+  SEARCH = 'search'
+}
+
+export enum CondominiumLotsRepositoryMethods {
+  FIND_BY_NAME = 'find by name'
+}
 
 export class RepositoryError {
   readonly status: StatusError

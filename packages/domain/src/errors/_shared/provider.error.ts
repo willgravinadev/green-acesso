@@ -4,12 +4,28 @@ type ParametersConstructorDTO = {
   error: Error | unknown
   provider: {
     name: ProvidersNames
-    method: string
-    externalName?: string
+    method: QueueProviderMethods | StorageProviderMethods | PDFProviderMethods
+    externalName?: 'bee-queue' | 'bullmq' | 'sqs' | 'pdf-lib' | 'local'
   }
 }
 
-export enum ProvidersNames {}
+export enum ProvidersNames {
+  QUEUE = 'queue',
+  STORAGE = 'storage',
+  PDF = 'pdf'
+}
+
+export enum QueueProviderMethods {
+  ENQUEUE_PAYMENT_SLIP_IMPORT = 'enqueue payment slip import'
+}
+
+export enum StorageProviderMethods {
+  UPLOAD_PDF = 'upload pdf'
+}
+
+export enum PDFProviderMethods {
+  GET_PAGES = 'get pages'
+}
 
 export class ProviderError {
   readonly status: StatusError
