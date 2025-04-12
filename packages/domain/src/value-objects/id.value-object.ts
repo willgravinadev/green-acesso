@@ -20,13 +20,18 @@ export class ID {
     return this.value
   }
 
-  public static validate(parameters: {
-    id: string
-    modelNameOrValueObjectName: ModelName | ValueObjectName
-  }): Either<InvalidIDError, { idValidated: ID }> {
+  public static validate(
+    parameters:
+      | { id: string; modelName: ModelName }
+      | { id: string; valueObjectName: ValueObjectName }
+  ): Either<InvalidIDError, { idValidated: ID }> {
     if (parameters.id.length !== 36) {
       return failure(
-        new InvalidIDError({ modelNameOrValueObjectName: parameters.modelNameOrValueObjectName })
+        new InvalidIDError(
+          'modelName' in parameters
+            ? { modelName: parameters.modelName }
+            : { valueObjectName: parameters.valueObjectName }
+        )
       )
     }
     return success({ idValidated: new ID({ id: parameters.id }) })

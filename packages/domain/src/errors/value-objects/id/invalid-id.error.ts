@@ -1,11 +1,9 @@
 import { type ModelName } from '../../../models/_model-name'
-import { ValueObjectName } from '../../../value-objects/_value-object-name'
+import { type ValueObjectName } from '../../../value-objects/_value-object-name'
 import { type ProviderError } from '../../_shared/provider.error'
 import { StatusError } from '../../_shared/status-error'
 
-type ParametersConstructorDTO = {
-  modelNameOrValueObjectName: ModelName | ValueObjectName
-}
+type ParametersConstructorDTO = { modelName: ModelName } | { valueObjectName: ValueObjectName }
 
 export class InvalidIDError {
   public readonly status: StatusError
@@ -18,9 +16,9 @@ export class InvalidIDError {
 
   constructor(parameters: ParametersConstructorDTO) {
     this.status = StatusError.INVALID
-    this.errorMessage = `Invalid ID to ${
-      parameters.modelNameOrValueObjectName in ValueObjectName ? 'value object' : 'model'
-    } ${parameters.modelNameOrValueObjectName}`
+    this.errorMessage = `Invalid ID to ${'modelName' in parameters ? 'model' : 'value object'} ${
+      'modelName' in parameters ? parameters.modelName : parameters.valueObjectName
+    }`
     this.name = 'InvalidIDError'
     this.errorValue = undefined
   }
