@@ -84,7 +84,8 @@ Exemplo de arquivo CSV esta na pasta `docs/boletos.csv`
 
 ### Import PDF
 
-Para importar boletos via PDF, utilize a rota `/boletos/import/pdf`. O arquivo PDF deve seguir o formato abaixo:
+Para importar boletos via PDF, utilize a rota `/boletos/import/pdf`.
+Vai ser criada uma pasta na raiz do projeto chamada `tmp/pdf/payment-slips` e os arquivos PDF serão salvos nela.
 
 Exemplo de requisição:
 
@@ -100,6 +101,7 @@ Exemplo de arquivo PDF esta na pasta `docs/boletos.pdf`
 ### Exportar relatório em PDF
 
 Para exportar um relatório em PDF com os boletos filtrados, utilize a rota `/boletos`.
+Vai ser criada uma pasta na raiz do projeto chamada `tmp/pdf/report-payment-slips` e o arquivo PDF será salvo nela.
 
 Exemplo de requisição:
 
