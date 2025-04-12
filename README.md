@@ -62,12 +62,12 @@ Também tem na pasta `docs`
 
 ### Import CSV
 
-Para importar boletos via CSV, utilize a rota `/boletos/importar-csv`. O arquivo CSV deve seguir o formato abaixo:
+Para importar boletos via CSV, utilize a rota `/boletos/import/csv`. O arquivo CSV deve seguir o formato abaixo:
 
 Exemplo de requisição:
 
 - Método: POST
-- Endpoint: `/boletos/importar-csv`
+- Endpoint: `/boletos/import/csv`
 - Content-Type: multipart/form-data
 - Corpo: arquivo CSV com o campo "file"
 
@@ -84,12 +84,12 @@ Exemplo de arquivo CSV esta na pasta `docs/boletos.csv`
 
 ### Import PDF
 
-Para importar boletos via PDF, utilize a rota `/boletos/importar-pdf`. O arquivo PDF deve seguir o formato abaixo:
+Para importar boletos via PDF, utilize a rota `/boletos/import/pdf`. O arquivo PDF deve seguir o formato abaixo:
 
 Exemplo de requisição:
 
 - Método: POST
-- Endpoint: `/boletos/importar-pdf`
+- Endpoint: `/boletos/import/pdf`
 - Content-Type: multipart/form-data
 - Corpo: arquivo PDF com o campo "file"
 
