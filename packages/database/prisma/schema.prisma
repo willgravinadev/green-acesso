@@ -1,0 +1,74 @@
+generator client {
+  provider   = "prisma-client-js"
+  engineType = "binary"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ==================== ENUMS ====================
+
+enum PaymentSlipStatus {
+  PENDING
+  PAID
+  OVERDUE
+}
+
+enum CondominiumLotStatus {
+  ACTIVE
+  INACTIVE
+}
+
+// ===================== BASE MODELS =====================
+
+/// Base model with common timestamp fields
+model BaseModel {
+  id        String    @id @unique @map("id") @db.Uuid()
+  createdAt DateTime  @map("created_at") @db.Timestamptz()
+  updatedAt DateTime  @map("updated_at") @db.Timestamptz()
+  deletedAt DateTime? @map("deleted_at") @db.Timestamptz()
+
+  @@map("base_model")
+  @@ignore
+}
+
+// ===================== MODELS =====================
+
+model PaymentSlip {
+  id String @id @unique @map("id") @db.Uuid()
+
+  payerName     String            @map("payer_name") @db.VarChar(255)
+  amountInCents Int               @map("amount_in_cents") @db.Integer()
+  barcode       String            @map("barcode") @db.VarChar(255)
+  status        PaymentSlipStatus @map("status")
+
+  // Relations
+  condominiumLotID String         @map("condominium_lot_id") @db.Uuid()
+  condominiumLot   CondominiumLot @relation(fields: [condominiumLotID], references: [id], name: "payment_slip_to_condominium_lot")
+
+  // Timestamps
+  createdAt DateTime  @map("created_at") @db.Timestamptz()
+  updatedAt DateTime  @map("updated_at") @db.Timestamptz()
+  deletedAt DateTime? @map("deleted_at") @db.Timestamptz()
+
+  @@map("payment_slips")
+}
+
+model CondominiumLot {
+  id String @id @unique @map("id") @db.Uuid()
+
+  name   String               @unique @map("name") @db.VarChar(255)
+  status CondominiumLotStatus @map("status")
+
+  // Relations
+  paymentSlips PaymentSlip[] @relation("payment_slip_to_condominium_lot")
+
+  // Timestamps
+  createdAt DateTime  @map("created_at") @db.Timestamptz()
+  updatedAt DateTime  @map("updated_at") @db.Timestamptz()
+  deletedAt DateTime? @map("deleted_at") @db.Timestamptz()
+
+  @@map("condominium_lots")
+}

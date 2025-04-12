@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+  },
+  "exclude": ["node_modules", "mocks/test-overrides/*.ts"],
+  "extends": "@greenacesso/tsconfig/base.json",
+  "include": ["**/*.ts"]
+}

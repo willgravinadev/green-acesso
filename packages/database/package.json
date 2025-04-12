@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "name": "@greenacesso/database",
+  "version": "0.0.0",
+  "description": "The ORM",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "main": "./src/index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo dist",
+    "db:format": "pnpm with-env prisma format",
+    "db:generate": "pnpm with-env prisma generate",
+    "db:migrate:dev": "pnpm with-env prisma migrate dev",
+    "db:migrate:prod": "pnpm with-env prisma migrate deploy",
+    "db:push": "pnpm with-env prisma db push",
+    "db:reset": "pnpm with-env prisma db push -- --force-reset",
+    "db:seed": "pnpm with-env prisma db seed",
+    "db:studio": "pnpm with-env prisma studio",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "prisma:migrate": "pnpm with-env prisma migrate dev --skip-seed",
+    "type-check": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@greenacesso/domain": "workspace:*",
+    "@greenacesso/logger": "workspace:*",
+    "@greenacesso/utils": "workspace:*",
+    "@prisma/client": "^6.6.0",
+    "@t3-oss/env-core": "^0.12.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@greenacesso/eslint-config": "workspace:*",
+    "@greenacesso/tsconfig": "workspace:*",
+    "@types/node": "^22.14.0",
+    "prisma": "^6.6.0"
+  },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix"
+  },
+  "prisma": {
+    "seed": "tsx src/seed.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./src/index.ts"
+      ]
+    }
+  }
+}
