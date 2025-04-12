@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": ["ES2022", "DOM"],
+    "paths": {
+      "@controllers/*": ["src/controllers/*"],
+      "@factories/*": ["src/factories/*"],
+      "@server/*": ["src/server/*"],
+      "@use-cases/*": ["src/use-cases/*"]
+    },
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"],
+  "extends": "@greenacesso/tsconfig/base.json",
+  "include": ["**/*.ts", "**/*.tsx"]
+}
