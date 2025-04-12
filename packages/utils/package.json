@@ -13,7 +13,6 @@
     "type-check": "tsc --noEmit"
   },
   "types": "src/index.ts",
-  "dependencies": {},
   "devDependencies": {
     "@greenacesso/eslint-config": "workspace:*",
     "@greenacesso/tsconfig": "workspace:*",
