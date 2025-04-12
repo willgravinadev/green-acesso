@@ -1,0 +1,116 @@
+{
+  "auth": {},
+  "event": [],
+  "info": {
+    "description": "",
+    "name": "green-acesso",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "auth": {},
+      "description": "",
+      "event": [],
+      "name": "import csv",
+      "protocolProfileBehavior": {
+        "followRedirects": true,
+        "strictSSL": false
+      },
+      "request": {
+        "auth": {},
+        "body": {},
+        "header": [],
+        "method": "POST",
+        "url": {
+          "host": ["localhost"],
+          "path": ["boletos", "import", "csv"],
+          "port": "2223",
+          "protocol": "http",
+          "query": [],
+          "raw": "http://localhost:2223/boletos/import/csv",
+          "variable": []
+        }
+      },
+      "response": []
+    },
+    {
+      "auth": {},
+      "description": "",
+      "event": [],
+      "name": "import pdf",
+      "protocolProfileBehavior": {
+        "followRedirects": true,
+        "strictSSL": false
+      },
+      "request": {
+        "auth": {},
+        "body": {},
+        "header": [],
+        "method": "POST",
+        "url": {
+          "host": ["localhost"],
+          "path": ["boletos", "import", "pdf"],
+          "port": "2223",
+          "protocol": "http",
+          "query": [],
+          "raw": "http://localhost:2223/boletos/import/pdf",
+          "variable": []
+        }
+      },
+      "response": []
+    },
+    {
+      "auth": {},
+      "description": "",
+      "event": [],
+      "name": "search payment slips",
+      "protocolProfileBehavior": {
+        "followRedirects": true,
+        "strictSSL": false
+      },
+      "request": {
+        "auth": {},
+        "body": {},
+        "header": [],
+        "method": "GET",
+        "url": {
+          "host": ["localhost"],
+          "path": ["boletos"],
+          "port": "2223",
+          "protocol": "http",
+          "query": [],
+          "raw": "http://localhost:2223/boletos",
+          "variable": []
+        }
+      },
+      "response": []
+    },
+    {
+      "auth": {},
+      "description": "",
+      "event": [],
+      "name": "exportPaymentSlipsReportAsPDF",
+      "protocolProfileBehavior": {
+        "followRedirects": true,
+        "strictSSL": false
+      },
+      "request": {
+        "auth": {},
+        "body": {},
+        "header": [],
+        "method": "GET",
+        "url": {
+          "host": ["localhost"],
+          "path": ["boletos"],
+          "port": "2223",
+          "protocol": "http",
+          "query": [],
+          "raw": "http://localhost:2223/boletos",
+          "variable": []
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": []
+}
