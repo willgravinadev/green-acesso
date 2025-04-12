@@ -87,7 +87,7 @@ export class FastifyFramework {
    */
   private setupCors(): void {
     this.app.register(fastifyCors, {
-      origin: ['http://localhost:3000', 'https://ecomverzo.inverzo.com.br']
+      origin: ['http://localhost:3000', 'https://greenacesso.com.br']
     })
   }
 
