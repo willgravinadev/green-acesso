@@ -43,12 +43,13 @@ export interface HttpRequest<
   params: Params
   headers: Headers
   access_token: string
-  file: FileUpload | undefined
 }
 
 // Separate file upload interface
 export interface FileUpload {
+  type: 'file'
   file: Readable
+  toBuffer: () => Promise<Buffer>
   fieldname: string
   filename: string
   encoding: string
